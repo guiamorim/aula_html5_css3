@@ -1,0 +1,34 @@
+body{
+    background: #EEE7E6;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h1, h2, p {
+    font-family: CooperHewittBook;
+}
+
+nav{
+    margin: 0px 0px 0px 100px;
+    font-family: CooperHewittBook;
+}
+
+header{
+    margin-top: 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+#menu{
+    background: white;
+}
+
+#main{
+    margin: 0px 200px 0px 100px;
+}
