@@ -4,13 +4,20 @@ body{
     margin-right: 0px;
 }
 
-h1, h2, p {
+h1, h2 {
     font-family: CooperHewittBook;
+    color: rgb(87, 15, 15);
+}
+
+p {
+    font-family: CooperHewittBook;
+    color: rgb(71, 71, 70);
 }
 
 nav{
     margin: 0px 0px 0px 100px;
     font-family: CooperHewittBook;
+    color: rgb(87, 15, 15);
 }
 
 header{
@@ -25,7 +32,11 @@ img {
     margin-bottom: 20px;
 }
 
-#menu{
+a {
+    text-decoration: none;
+}
+
+#menu {
     background: white;
 }
 
