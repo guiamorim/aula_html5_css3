@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body{
     background: #EEE7E6;
     margin-left: 0px;
@@ -15,9 +23,38 @@ p {
 }
 
 nav{
-    margin: 0px 0px 0px 100px;
+    position: relative;
+    padding: 10px 20px 10px 10px;
+    text-align: right;
+    z-index: 1;
+    background: rgb(99, 98, 98);
+    margin: 0 auto;
+    width: calc(100% - 60px);
+    /* margin: 0px 0px 0px 100px;
     font-family: CooperHewittBook;
-    color: rgb(87, 15, 15);
+    color: rgb(87, 15, 15);*/
+}
+
+nav:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 100%;
+    border-top: 10px solid #333;
+    border-right: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+nav:after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 100%;
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
 }
 
 header{
@@ -54,6 +91,46 @@ footer{
 
 .menu {
     background: white;
+}
+
+.menu-area li {
+    list-style: none;
+    display: inline-block; /* Deixa o MEnu na horizontal */
+}
+
+.menu-area li a {
+    text-decoration: none;
+    color: #FFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 30px;
+    position: realtive;
+    z-index: 1;
+}
+
+.menu-area li a:hover {
+    background: rgb(150, 114, 108);
+    color: #FFF;
+}
+
+
+
+
+.custom-padding{
+    padding-top: 25px;
+}
+
+.logo{
+    width: 15%;
+    float:left;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 2%;
 }
 
 .footer{
